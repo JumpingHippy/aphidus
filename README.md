@@ -1,9 +1,9 @@
-<!-- # aphidus 
-A simple crawler for .onion sites -->
+# aphidus 
+A simple crawler for .onion sites
 
-HTML Metadata Extractor
+# HTML Metadata Extractor
 
-Overview:
+## Overview:
 This Bash script extracts useful metadata and structural elements from HTML files, including:
 - Title
 - Meta description
@@ -14,7 +14,7 @@ This Bash script extracts useful metadata and structural elements from HTML file
 
 It supports processing multiple HTML files at once and provides color-coded terminal output when run interactively.
 
-Features:
+## Features:
 - Extracts essential metadata from <title> and <meta> tags
 - Counts media elements like images and videos
 - Extracts alt attributes from images
@@ -22,8 +22,8 @@ Features:
 - Works with multiple files (*.html)
 - Supports color-coded terminal output
 
-```
-Installation & Usage:
+
+## Installation & Usage:
 
 1. Clone the repository:
    git clone https://github.com/yourusername/html-metadata-extractor.git
@@ -39,8 +39,8 @@ Redirecting output (without colors):
 If you want to save the output to a file (without color codes), use:
    ./extract_html_info.sh *.html > output.txt
 
-Example Output:
-Processing: example.html
+## Example Output:
+```Processing: example.html
 Title: Example Web Page
 Description: This is a sample website description.
 Keywords: sample, example, website
@@ -54,18 +54,16 @@ Number of Videos: 2
 Number of <h1> Headers: 1
 Number of <h2> Headers: 3
 ===================================
-
-How It Works:
+```
+## How It Works:
 The script uses:
 - grep and sed to extract <title> and <meta> information.
 - grep to count media tags (<img> and <video>).
 - Regular expressions to extract text between HTML tags.
 - ANSI escape codes for color-coded output (disabled when redirected).
 
-License:
+# License:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contributing:
+# Contributing:
 Feel free to fork the repository and submit pull requests! Suggestions and improvements are welcome.
-
-```
