@@ -10,7 +10,7 @@ This Bash script extracts useful metadata and structural elements from HTML file
 - Keywords
 - Number of images (<img>) and their alt text descriptions
 - Number of videos (<video>)
-- Count of <h1> and <h2> headers
+- Count of \<h1\> and \<h2\> headers
 
 It supports processing multiple HTML files at once and provides color-coded terminal output when run interactively.
 
@@ -18,10 +18,11 @@ Features:
 - Extracts essential metadata from <title> and <meta> tags
 - Counts media elements like images and videos
 - Extracts alt attributes from images
-- Counts headings (<h1> and <h2>)
+- Counts headings (\<h1\> and \<h2\>)
 - Works with multiple files (*.html)
 - Supports color-coded terminal output
 
+```
 Installation & Usage:
 
 1. Clone the repository:
@@ -66,3 +67,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Contributing:
 Feel free to fork the repository and submit pull requests! Suggestions and improvements are welcome.
+
+```
