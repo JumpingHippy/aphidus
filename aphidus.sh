@@ -51,6 +51,7 @@ crawl_url() {
   fi
   echo "Downloaded: $url" 
   echo "$url" >> "$CRAWLED_URLS"
+  ./extract_info.sh "$OUTPUT_DIR/$filename" 
 
   ((sites_crawled++))
 
@@ -61,9 +62,9 @@ crawl_url() {
     links+=("$onion_url")
   done < <(grep -oE '<a href="(http|https)://[a-z2-7]{56}\.onion[^"]*"' "$OUTPUT_DIR/$filename" | sed -E 's/<a href="//;s/"$//')
   
-   # Extract domain from current_url
-   current_domain=$(echo "$url" | awk -F[/:] '{print $4}')
-   echo "Current url: $url"
+   ## Extract domain from current_url
+   #current_domain=$(echo "$url" | awk -F[/:] '{print $4}')
+   #echo "Current url: $url"
 
   # Process extracted links
   if [ ${#links[@]} -gt 0 ]; then
